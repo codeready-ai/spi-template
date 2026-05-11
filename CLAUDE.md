@@ -74,4 +74,12 @@ We value **thoughtfulness, accuracy, and thoroughness** over speed. In the long 
 - The `MEMORY.md` index and all memory files live under `memory/`.
 
 ## Project Structure
-To be recorded as we complete tickets.
+
+Basic structure at repo root:
+
+- `.env` — local secrets (gitignored)
+- `docker-compose.yml` — stack definition for local
+- `devops/` — infrastructure, deployment, CI/CD configs
+- `data/` — local data files
+- `src/` — application source code
+- `tmp/` — scratch space (gitignored)
