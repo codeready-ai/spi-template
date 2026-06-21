@@ -48,11 +48,6 @@ We value **thoughtfulness, accuracy, and thoroughness** over speed. In the long 
 - **Check official docs for APIs, permissions, and CLI flags.** Do not assume behavior — verify it. Use `WebSearch`/`WebFetch` to confirm before writing code that depends on external tool behavior.
 - **Understand the full execution path.** Before writing a CI/CD step, think through: What triggers it? What state exists at that point? What happens on success and failure? What are the edge cases (first run, concurrent runs, failed prior steps)?
 
-### One problem at a time
-
-- **Keep PRs focused.** Each PR should solve one problem.
-- **Fix forward, don't stack.** If a PR introduces a bug, fix it in a new PR rather than amending — this keeps the history clear and avoids compounding errors.
-
 ### Logging
 
 - use a standard log library for the language
