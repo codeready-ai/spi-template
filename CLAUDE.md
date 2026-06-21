@@ -2,8 +2,8 @@
 
 ## Project Overview
 
-Name:
-Main purpose:
+Name: PROJECT NAME HERE
+Main purpose: DESCRIPTION HERE
 
 ## Version Control
 
@@ -16,6 +16,7 @@ Main purpose:
 - Every service is containerized.
 - A `docker-compose.yml` defines the full local stack.
 - All local operations run through `docker compose up`.
+- All tests, experiments, spikes run inside a container
 
 ## Secrets Management
 
@@ -74,7 +75,8 @@ Basic structure at repo root:
 
 - `.env` — local secrets (gitignored)
 - `docker-compose.yml` — stack definition for local
-- `devops/` — infrastructure, deployment, CI/CD configs
 - `data/` — local data files
+- `devops/` — infrastructure, deployment, CI/CD configs
+- `docs/` — project planning and other reference docs
 - `src/` — application source code
 - `tmp/` — scratch space (gitignored)
