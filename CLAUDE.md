@@ -30,6 +30,7 @@ Main purpose: DESCRIPTION HERE
 ## Development Workflow
 
 - **TDD red/green**: Write a failing test first, then make it pass, then refactor.
+- **Testing and Definition of Done**: See Philosophy below.
 - **Plan mode**: When in plan mode, save accepted plans to `docs/<appropriate-name>.md`.
   - Only execute a plan after verifying it has been saved.
   - Read the plan from the in-repo `docs/` location before executing.
@@ -43,6 +44,10 @@ We value **thoughtfulness, accuracy, and thoroughness** over speed. In the long 
 - **Test commands locally first.** When you can, test things with common linux utilities. Example: Writing an API call? `curl` first.
 - **Review the diff.** Read through `git diff` carefully before every commit — look for typos, wrong variable names, and unintended changes.
 - **Validate YAML/config syntax.** For core code, SQL queries, GitHub Actions workflows, Terraform files, nginx configs, and other domain specific languages: validate syntax (lint) before pushing.
+- **Testing and Definition of Done: Philosophy**: When we build features, we test locally to ensure logical completeness:
+- check logs for errors
+- drive the UX flow with playwright for features and screens affected (even if only affected by the FE -> BE calls) to look for visual errors, check for console errors, and generally feel the ground is pat
+- it's OK to stop and request assistance if I don't have right tools installed or if it turns out you're not sure how to test something.
 
 ### Research before implementing
 
